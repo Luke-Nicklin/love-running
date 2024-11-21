@@ -36,7 +36,34 @@
     </header>
 
     <!--Main content-->
-    <main>Main Content</main>
+    <main>
+        <section id="signup">
+            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h2><i class="fa-solid fa-heart-pulse"></i>Let's get you signed up</h2>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required><br>
+                <div class="radio-buttons">
+                    <div>
+                        <label for="road">Road</label>
+                        <input type="radio" name="running_preference" id="road" value="road" required checked>
+                    </div>
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input type="radio" name="running_preference" id="trail" value="trail" required>
+                    </div>
+                    <div>
+                        <label for="both">Both</label>
+                        <input type="radio" name="running_preference" id="both" value="both" required>
+                    </div>
+                </div>
+                <button type="submit" class="join-button">Let's Run!</button>
+            </form>
+        </section>
+    </main>
 
     <!--Footer-->
     <footer>
@@ -51,7 +78,8 @@
                     aria-label="Visit our YouTube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
             </li>
             <li><a href="https://instagram.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+                    aria-label="Visit our Instagram page (opens in a new tab)"><i
+                        class="fa-brands fa-instagram"></i></a>
             </li>
         </ul>
     </footer>
